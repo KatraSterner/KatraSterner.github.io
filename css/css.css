@@ -215,6 +215,12 @@ nav a:hover {
     margin: 1em;
     font-size: large;
 }
+#baking-art-craft {
+    @media only screen and (min-width: 65em){
+        display: flex; 
+        flex-direction: row;
+    }
+}
 hr{
     color:#E07A5F;
     border: solid;
@@ -224,11 +230,12 @@ hr{
     width: 30%;
     border: solid #81B29A 5px;
     object-fit: cover;
+    max-width: 15em;
 }
 #baking-div {
     display: flex;
-    padding-right: 1em;
     margin-top: 2em;
+    margin-left: 1em;
 }
 /* arts and crafts secction */
 #art-img{
@@ -239,6 +246,7 @@ hr{
 }
 #art-div{
     display:flex;
+    margin-left: 1em;
 }
 #art-text {
     display: flex;
@@ -247,6 +255,7 @@ hr{
 }
 #craft-div {
     display: flex;
+    margin-left: 1em;
 }
 #craft-img {
     width: 30%;
@@ -260,10 +269,60 @@ hr{
     flex-direction: column;
     justify-content: center;
 }
+/* media section */
+#video-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#yt-frame {
+    width: 75%;
+}
+#yt-link {
+    padding: 10px;
+    margin: 5px;
+    font-size:x-large;
+    font-weight: bold;
+    text-decoration: none;
+    color:#3D405B;
+    border: solid #81B29A;
+    background-color: #F4F1DE;
+}
+#yt-link:hover {
+    color:#F4F1DE;
+    background-color: #E07A5F;
+    border: solid #E07A5F
+}
 
-/* footer */
+
+/* PROJECTS PAGE FORMATTING ------------------------------- */
+#project-content {
+    margin: 5px;
+}
+.project-images {
+    @media only screen and (min-width: 36em){
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        height: 100%;
+    }
+}
+.project-img {
+    width: 90%;
+    max-height: 10em;
+    object-fit: cover;
+}
+.project-div {
+    border: solid #81B29A;
+    background-color: #F2CC8F;
+    padding: 5px;
+    margin: 5px; 
+}
+
+/* footer on all pages */
 footer{
     background-color: #F2CC8F;
     padding: 5px;
     border: solid #3D405B;
 }
+
