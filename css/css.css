@@ -1,0 +1,269 @@
+
+/* whole site formatting */
+body{
+    background-color:#F4F1DE;
+    color:#3D405B;
+    font-family:'Courier New', Courier, monospace;
+    margin:0px
+}
+/* span tag text id */
+#bold-text {
+    font-weight: bold;
+}
+
+/* main content on home page to navigate to other pages */
+#home-grid{
+    display: grid;
+    @media screen and (max-width:500px){
+        grid-template-columns: 100%;
+    }
+    @media screen and (min-width:501px){
+        grid-template-columns: 50% 50%;
+    }
+    background-color:#F4F1DE
+}
+#home-grid a{
+    align-content: center;
+    padding-left: 20%;
+    border: solid #E07A5F;
+    background-color: #F2CC8F;
+    color:#3D405B;
+    font-weight: bold;
+    font-size:x-large;
+    height: 3em;
+    margin: 1ex;
+}
+#home-grid a:hover{
+    background-color: #E07A5F;
+    color:#F4F1DE;
+}
+#home-link{
+    text-decoration: none;
+    color:#3D405B;
+    font-weight: bold;
+}
+#home-link:hover{
+    color:#F4F1DE
+}
+
+#image-portrait{
+    height: 200px;
+}
+
+/* header */
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:#81B29A;
+    padding: 10px;
+    border: solid #3D405B
+}
+/* navigation links under header */
+nav{
+    display: flex;
+    background-color:#3D405B;
+    justify-content: end;
+}
+nav a{
+    color:#F4F1DE;
+    text-decoration: none;
+    padding: 7px;
+}
+nav a:hover {
+    background-color:#E07A5F
+}
+
+/* SKILLS PAGE FORMATTING -----------------------------------------*/
+/* skills table */
+#skills-table{
+    background-color:#F2CC8F;
+    border-collapse: collapse;
+    border-bottom: solid #81B29A 8px;
+    border-right: solid #81B29A 8px;
+    margin-left: 10px;
+}
+#learned{
+    font-weight: bold;
+}
+/* all headers on the skills page */
+.skills-header {
+    padding-left: 5px;
+}
+#skills-table td{
+    border:solid #E07A5F 2px;
+    padding: 3px
+}
+/* Languages and Programs AND Abilities sections (top two) */
+#skill-side{
+    display: flex;
+    justify-content: space-around;
+    @media only screen and (max-width: 50em){
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Experience and Education sections (bottom two) */
+#skill-main{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column-reverse;
+}
+/* Education */
+#education{
+    border:solid #81B29A;
+    margin: 5px;
+    padding: 5px;
+}
+/* Experience */
+#experience{
+    border: solid #81B29A;
+    margin: 5px;
+    padding: 5px;
+}
+/* Abilities */
+#abilities{
+    border: solid #81B29A;
+    margin:5px;
+    margin-bottom: 0px;
+    padding: 1em;
+    display: flex;
+    flex-flow: column;
+    @media only screen and (max-width: 50em){
+        width: 80%
+    }
+}
+#skill-apps {
+    display: flex;
+    margin-left: 5px;
+    margin-top: 1em;
+    flex-wrap: wrap;
+    border: solid #81B29A;
+    @media only screen and (min-width: 51em){
+        flex-direction: column;
+    }
+}
+#skill-img {
+    padding: 1em;
+    height: 7em;
+}
+
+/* ABOUT ME PAGE FORMATTING ------------------------------- */
+.about-section {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+#about-paragraph {
+    padding: 5px;
+    font-size: large;
+}
+#about-side {
+    max-width: 30em;
+    border: solid #81B29A;
+    margin: 5px;
+    @media only screen and (min-width: 50em){
+        margin-bottom: 5em;
+        margin-top: 2em;
+    }
+}
+#about-content {
+    display: flex;
+    justify-content: space-around;
+    @media only screen and (max-width: 50em){
+            flex-direction: column;
+        }
+}
+#resume-image{
+    width: 95%;
+    border: solid #81B29A;
+}
+#about-specifics {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    background-color:#F2CC8F;
+    align-items: center;
+    padding: 5px;
+    border: solid #81B29A
+}
+#linkedin{
+    padding: 10px;
+    margin: 5px;
+    font-size:x-large;
+    font-weight: bold;
+    text-decoration: none;
+    color:#3D405B;
+    border: solid #81B29A;
+    background-color: #F4F1DE;
+}
+#linkedin:hover{
+    color:#F4F1DE;
+    background-color: #E07A5F;
+    border: solid #E07A5F
+}
+#resume-header{
+    font-size: xx-large;
+    margin: 5px;
+    margin-top: 15px;
+}
+
+
+
+/* HOBBIES PAGE FORMATTING -------------------------------- */
+#hobbies-content {
+    margin: 1em;
+    font-size: large;
+}
+hr{
+    color:#E07A5F;
+    border: solid;
+}
+/* baking section */
+#baking-img{
+    width: 30%;
+    border: solid #81B29A 5px;
+    object-fit: cover;
+}
+#baking-div {
+    display: flex;
+    padding-right: 1em;
+    margin-top: 2em;
+}
+/* arts and crafts secction */
+#art-img{
+    width: 30%;
+    border: solid #81B29A 5px;
+    object-fit: cover;
+    max-width: 15em;
+}
+#art-div{
+    display:flex;
+}
+#art-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#craft-div {
+    display: flex;
+}
+#craft-img {
+    width: 30%;
+    max-width: 15em;
+    border: solid #81B29A 5px;
+    object-fit: cover;
+}
+#craft-text{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* footer */
+footer{
+    background-color: #F2CC8F;
+    padding: 5px;
+    border: solid #3D405B;
+}
